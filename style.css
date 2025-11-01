@@ -141,8 +141,9 @@ img {
   justify-content: left;
   align-items: center;
   padding-top: 250px;
-}
+} 
 .main-text {
+  padding: 0 15px;
   text-align: center;
 }
 .main-title {
