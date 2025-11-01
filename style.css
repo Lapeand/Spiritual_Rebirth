@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Cera Pro;
+  background-color: white;
+}
+img {
+  max-width: 100%;
+}
+
+/* Цвета */
+/* background-color: rgb(91, 111, 144); синий*/
+/* background-color: rgb(162, 193, 196); голубой*/
+/* background-color: rgb(221, 174, 100); оранжевый*/
+/* background-color: rgb(217, 217, 217); серый*/
+/* background-color: rgb(103, 103, 102); светло-черный*/
+
+/* Шапка */
+.header {
+  padding: 15px 0;
+  width: 100%;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header-logo {
+}
+.logoImg {
+  width: 120px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header-list {
+}
+.nav-item {
+  list-style: none;
+  margin-right: 25px;
+  font-size: 26px;
+  font-weight: 500;
+}
+.nav-item a {
+  color: black;
+  text-decoration: none;
+}
+.nav-item :hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/* меню */
+.header_menu {
+  display: none;
+}
+/*      Отображения темной области за меню */
+.header_menu {
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  z-index: 1000;
+  top: 1%;
+  right: 2%;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+.header_menu:hover {
+  cursor: pointer;
+}
+/*      Линии в меню */
+.header_menu span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+}
+.header_menu span,
+.header_menu span::before,
+.header_menu span::after {
+  display: block;
+  width: 25px;
+  right: 0;
+  height: 3px;
+  background-color: #fff;
+  transition-duration: 0.3s;
+}
+.header_menu span::before,
+.header_menu span::after {
+  content: "";
+  position: absolute;
+}
+.header_menu span::before {
+  top: -9px;
+  width: 20px;
+}
+.header_menu span::after {
+  top: 9px;
+  width: 33px;
+}
+/*       Крестик после нажатия на меню */
+.header_menu.clicked span {
+  background-color: transparent;
+}
+.header_menu.clicked span::before {
+  transform: translateY(9px) rotate(45deg);
+  width: 33px;
+}
+.header_menu.header_menu.clicked span::after {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Главная */
+.main {
+  margin-top: 0;
+}
+.main-bg {
+  margin-top: -123px;
+  background-image: url("png картинки для сайта церкви/фон.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container_text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 250px;
+}
+.main-text {
+  text-align: center;
+}
+.main-title {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.main-suptitle {
+  font-size: 24px;
+}
+
+/* Карта */
+.church-map {
+}
+.container {
+}
+.church-map .container {
+}
+.map-info {
+  padding: 30px 100px 50px 100px;
+}
+.map-title {
+  font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  border-radius: 45px;
+  overflow: hidden;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* О нас */
+/* Левая часть с информацией */
+.info-church {
+  text-align: center;
+  background-color: #f5f7f6;
+}
+
+.info-church .container {
+  display: flex;
+  padding: 50px 0;
+}
+.info-church-body {
+  width: 50%;
+}
+.info-church-title {
+}
+.info-title {
+  margin-top: 0px;
+  font-size: 30px;
+}
+.info-church-suptitle {
+  font-size: 24px;
+}
+
+/* Картинка */
+.info-church-Img {
+  display: flex;
+  min-width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.container-img {
+  padding: auto 0;
+}
+.container-img img {
+  border-radius: 35%;
+  max-width: 100%;
+  height: 375px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Вероучение */
+.faith-study {
+}
+.faith-study .container {
+  padding: 50px 15px;
+}
+.faith-title {
+  width: 60%;
+  text-align: center;
+  font-size: 30px;
+}
+.faith-study ol {
+  font-size: 24px;
+}
+
+/* Пожертвование */
+.donation {
+  background-color: #e8f5e9;
+}
+.donation .container {
+  padding: 50px 15px;
+  display: flex;
+}
+.donation-info {
+}
+.donation-title {
+  text-align: center;
+  width: 60%;
+  font-size: 30px;
+}
+.donation-subtitle {
+  font-size: 24px;
+}
+.donation-img {
+}
+.donat-img {
+  min-width: 80%;
+  border-radius: 5%;
+}
+
+/* Подвал */
+.footer {
+  background-color: rgb(162, 193, 196);
+}
+.footer .container {
+  padding: 50px 0;
+}
+.footer_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_logo a {
+  text-align: center;
+  display: inline-block;
+  width: 20%;
+}
+.footer_logo_img {
+  width: 100%;
+}
+.footer_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_social a {
+  display: inline-block;
+  max-height: 40px;
+  max-width: 60px;
+  margin-right: 10px;
+}
+.footer_img {
+  width: 100%;
+}
+
+/* Адаптация */
+@media (max-width: 1482px) {
+  .main-bg {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container_text {
+    padding-top: 170px;
+  }
+  .main-text {
+    width: 100%;
+  }
+  .donation .container {
+    display: block;
+  }
+  .donation-title {
+    width: 50%;
+  }
+  .donation-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .donation-img a {
+    display: inline-block;
+    width: 50%;
+  }
+  .donat-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 940px) {
+  .nav-item {
+    font-size: 22px;
+    margin-right: 20px;
+  }
+  .info-church-body {
+    width: 100%;
+  }
+  .info-church .container {
+    display: block;
+    padding: 50px 15px;
+  }
+  .faith-title {
+    width: 100%;
+  }
+  .faith-study .container {
+    padding: 50px 15px;
+  }
+  .donation-title {
+    width: 100%;
+  }
+  .donation-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_menu {
+    display: block;
+  }
+  .header-list {
+    flex-direction: column;
+  }
+
+  /* Список в меню */
+  #nav {
+    position: fixed;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0px;
+    right: 0;
+    height: 100%;
+    max-width: 250px;
+    width: 100%;
+    padding: 100px 40px 60px;
+    transition: transform 0.3s ease-in;
+    transform: translateX(100%);
+  }
+  #nav.showMenu {
+    transform: translateX(0px);
+  }
+  #nav ul.header-list li a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+  }
+  #nav ul.header-list li a:hover {
+    color: gray;
+  }
+  #nav ul.header-list {
+    margin-bottom: 500px;
+  }
+}
+
+@media (max-width: 729px) {
+  .map-info {
+    padding: 50px 50px;
+  }
+  .footer_logo a {
+    width: 30%;
+  }
+}
+
+@media (max-width: 638px) {
+  .map-info {
+    padding: 50px 25px;
+  }
+}
+
+@media (max-width: 526px) {
+  #nav {
+    width: 100%;
+    max-width: 175px;
+  }
+  .container_text {
+    padding-top: 170px;
+  }
+  .icon-img {
+    width: 25%;
+  }
+  .footer_logo a {
+    width: 40%;
+  }
+}
