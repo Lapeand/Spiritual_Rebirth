@@ -130,7 +130,7 @@ img {
 }
 .main-bg {
   margin-top: -123px;
-  background-image: url("png картинки для сайта церкви/фон.png");
+  background-image: url("images/backgroundImg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
