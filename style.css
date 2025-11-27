@@ -8,12 +8,7 @@ img {
   max-width: 100%;
 }
 
-/* Цвета */
-/* background-color: rgb(91, 111, 144); синий*/
-/* background-color: rgb(162, 193, 196); голубой*/
-/* background-color: rgb(221, 174, 100); оранжевый*/
-/* background-color: rgb(217, 217, 217); серый*/
-/* background-color: rgb(103, 103, 102); светло-черный*/
+
 
 /* Шапка */
 .header {
@@ -31,23 +26,16 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-.header-logo {
-}
-.logoImg {
-  width: 120px;
-}
-
 .nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: black 4px solid;
 }
 .nav-list ul {
   display: flex;
   margin: 0;
   padding: 0;
-}
-.header-list {
 }
 .nav-item {
   list-style: none;
@@ -60,9 +48,12 @@ img {
   text-decoration: none;
 }
 .nav-item :hover {
-  color: white;
+  color: rgb(135, 135, 135);
   transition: 0.5s;
 }
+
+
+
 
 /* меню */
 .header_menu {
@@ -124,13 +115,26 @@ img {
   transform: translateY(-9px) rotate(-45deg);
 }
 
+
+
+
 /* Главная */
 .main {
   margin-top: 0;
 }
+.logoChurch{
+  width: 150px;
+}
+.main-info {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
 .main-bg {
-  margin-top: -123px;
-  background-image: url("images/backgroundImg.png");
+  background-image: url("images/newBackground1.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -138,28 +142,64 @@ img {
 
 .container_text {
   display: flex;
+  flex-direction: column;
   justify-content: left;
   align-items: center;
-  padding-top: 250px;
+  width: 70%;
 } 
-.main-text {
-  padding: 0 15px;
-  text-align: center;
-}
-.main-title {
+.mainTitle {
   font-size: 30px;
-  margin-bottom: 25px;
+  margin: 10px 0;
 }
-.main-suptitle {
-  font-size: 24px;
+.mainText1 {
+  text-align: center;
+  margin-bottom: 15px;
 }
+.mainSuptitle {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.mainText2{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.mainText2 p{
+  margin: 5px 0;
+}
+/* Картинка */
+.container-img {
+  display: flex;             /* Чтобы выровнять картинку внутри */
+  justify-content: center;
+  align-items: center;
+}
+.churchOutside {
+  border-radius: 35%;
+  max-width: 100%;
+  height: 375px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* СОЦ. СЕТИ */
+.socialItem {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px;
+}
+.SocialImg {
+  width: 50px;
+}
+
+
+
 
 /* Карта */
 .church-map {
-}
-.container {
-}
-.church-map .container {
+  background-image: url("images/newBackground1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .map-info {
   padding: 30px 100px 50px 100px;
@@ -178,55 +218,21 @@ img {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* О нас */
-/* Левая часть с информацией */
-.info-church {
-  text-align: center;
-  background-color: #f5f7f6;
-}
 
-.info-church .container {
-  display: flex;
-  padding: 50px 0;
-}
-.info-church-body {
-  width: 50%;
-}
-.info-church-title {
-}
-.info-title {
-  margin-top: 0px;
-  font-size: 30px;
-}
-.info-church-suptitle {
-  font-size: 24px;
-}
 
-/* Картинка */
-.info-church-Img {
-  display: flex;
-  min-width: 50%;
-  align-items: center;
-  justify-content: center;
-}
-.container-img {
-  padding: auto 0;
-}
-.container-img img {
-  border-radius: 35%;
-  max-width: 100%;
-  height: 375px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
+
+
 
 /* Вероучение */
 .faith-study {
+  background-image: url("images/newBackground1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .faith-study .container {
   padding: 50px 15px;
 }
 .faith-title {
-  width: 60%;
   text-align: center;
   font-size: 30px;
 }
@@ -234,87 +240,68 @@ img {
   font-size: 24px;
 }
 
+
+
+
+
 /* Пожертвование */
 .donation {
-  background-color: #e8f5e9;
+  background-image: url("images/newBackground1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .donation .container {
   padding: 50px 15px;
   display: flex;
 }
-.donation-info {
-}
+
 .donation-title {
   text-align: center;
-  width: 60%;
   font-size: 30px;
 }
 .donation-subtitle {
   font-size: 24px;
-}
-.donation-img {
 }
 .donat-img {
   min-width: 80%;
   border-radius: 5%;
 }
 
+
+
+
 /* Подвал */
 .footer {
-  background-color: rgb(162, 193, 196);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("images/newBackground1.png");
+  background-size: cover;
+  background-position: center;
 }
-.footer .container {
-  padding: 50px 0;
-}
-.footer_logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer_logo a {
+
+.footer-content {
+  padding: 15px 10px;
   text-align: center;
-  display: inline-block;
-  width: 20%;
+  max-width: 900px;
 }
-.footer_logo_img {
-  width: 100%;
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
-.footer_social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-info {
+  font-size: 20px;
 }
-.footer_social a {
-  display: inline-block;
-  max-height: 40px;
-  max-width: 60px;
-  margin-right: 10px;
-}
-.footer_img {
-  width: 100%;
-}
+
+
+
 
 /* Адаптация */
-@media (max-width: 1482px) {
-  .main-bg {
-    background-size: cover;
-    background-position: center;
-  }
-}
-
 @media (max-width: 1150px) {
-  .container_text {
-    padding-top: 170px;
-  }
-  .main-text {
-    width: 100%;
-  }
   .donation .container {
     display: block;
   }
-  .donation-title {
-    width: 50%;
-  }
+  
   .donation-img {
     display: flex;
     justify-content: center;
@@ -322,24 +309,39 @@ img {
   }
   .donation-img a {
     display: inline-block;
-    width: 50%;
+    width: 35%;
   }
   .donat-img {
     width: 100%;
   }
 }
 
+@media (max-width: 1069px){
+  .main-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-bg {
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .main-info {
+    flex-direction: column;
+  }
+
+  .container-img img {
+    height: auto;
+    max-width: 100%;
+  }
+
+} 
+
+
 @media (max-width: 940px) {
   .nav-item {
     font-size: 22px;
     margin-right: 20px;
-  }
-  .info-church-body {
-    width: 100%;
-  }
-  .info-church .container {
-    display: block;
-    padding: 50px 15px;
   }
   .faith-title {
     width: 100%;
@@ -363,6 +365,9 @@ img {
   }
   .header-list {
     flex-direction: column;
+  }
+  .donation-img a {
+    width: 45%;
   }
 
   /* Список в меню */
@@ -402,9 +407,6 @@ img {
   .map-info {
     padding: 50px 50px;
   }
-  .footer_logo a {
-    width: 30%;
-  }
 }
 
 @media (max-width: 638px) {
@@ -414,17 +416,16 @@ img {
 }
 
 @media (max-width: 526px) {
-  #nav {
-    width: 100%;
-    max-width: 175px;
+  .SocialImg {
+    width: 90px;
   }
-  .container_text {
-    padding-top: 170px;
+  .donation-img a {
+    width: 55%;
   }
-  .icon-img {
-    width: 25%;
-  }
-  .footer_logo a {
-    width: 40%;
+  
+}
+@media (max-width: 400px) {
+  .donation-img a {
+    width: 70%;
   }
 }
