@@ -410,6 +410,10 @@ img {
 }
 
 @media (max-width: 638px) {
+  .container_text {
+    padding: 0;
+    width: 100%;
+  } 
   .map-info {
     padding: 50px 25px;
   }
