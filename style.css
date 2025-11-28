@@ -12,21 +12,18 @@ img {
 
 /* Шапка */
 .header {
-  padding: 15px 0;
-  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 15px 15px;
 }
 .header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
 }
 .container {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 .logoChurch{
-  /* width: 150px; */
 }
 .logoChurch img{
   width: 100%;
@@ -37,7 +34,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: black 4px solid;
 }
 .nav-list ul {
   display: flex;
@@ -126,11 +122,8 @@ img {
 
 
 /* Главная */
-.main {
-  margin-top: 0;
-}
 .main-info {
-  max-width: 1250px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
@@ -140,36 +133,47 @@ img {
   background-image: url("images/newBackground1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 .container_text {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: center;
+  align-items: left;
   width: 70%;
 } 
 .mainTitle {
   font-size: 30px;
   margin: 10px 0;
 }
-.mainText1 {
-  text-align: center;
+
+.mainText1{
+  font-size: 20px;
+  text-align: left;
+  margin: 45px 10px 15px 0;
+}
+.mainText1 p{
+  margin: 5px 0;
+}
+/* СОЦ. СЕТИ */
+.socialItem {
+  display: flex;
+  align-items: center; 
+  justify-content: left; 
+  gap: 10px;
+}
+.SocialImg {
+  width: 50px;
+}
+.mainText2 {
+  text-align: left;
   margin-bottom: 15px;
 }
 .mainSuptitle {
   font-size: 20px;
   margin: 15px 0;
 }
-.mainText2{
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.mainText2 p{
-  margin: 5px 0;
-}
+
 /* Картинка */
 .container-img {
   display: flex;             /* Чтобы выровнять картинку внутри */
@@ -184,16 +188,7 @@ img {
 }
 
 
-/* СОЦ. СЕТИ */
-.socialItem {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  gap: 10px;
-}
-.SocialImg {
-  width: 50px;
-}
+
 
 
 
@@ -233,7 +228,9 @@ img {
   background-size: cover;
 }
 .faith-study .container {
-  padding: 50px 15px;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 25px 15px;
 }
 .faith-title {
   text-align: center;
@@ -254,8 +251,10 @@ img {
   background-size: cover;
 }
 .donation .container {
-  padding: 50px 15px;
+  padding: 25px 15px;
   display: flex;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .donation-title {
@@ -286,6 +285,7 @@ img {
   padding: 15px 10px;
   text-align: center;
   max-width: 400px;
+  margin: 0 auto;
 }
 .footer-info {
   font-size: 15px;
@@ -320,14 +320,8 @@ img {
     align-items: center;
   }
   .main-bg {
-    height: auto;
     padding-bottom: 10px;
   }
-
-  .main-info {
-    flex-direction: column;
-  }
-
   .container-img img {
     height: auto;
     max-width: 100%;
@@ -410,7 +404,6 @@ img {
 @media (max-width: 638px) {
   .container_text {
     padding: 0;
-    width: 100%;
   } 
   .map-info {
     padding: 50px 25px;
