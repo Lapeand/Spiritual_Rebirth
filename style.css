@@ -381,11 +381,8 @@ strong {
   }
 
   .socialItem {
-    justify-content: flex-start; /* иконки соцсетей тоже идут слева */
+    justify-content: flex-start;
   }
-
-
-
   .container-img {
   margin-top: 20px;
   margin-top: 20px;
@@ -395,7 +392,21 @@ strong {
     height: auto;
     max-width: 100%;
   }
-
+  .map-info h1{
+    font-size: 28px;
+  }
+  .faith-title{
+    font-size: 28px;
+  }
+  .faith-study ol {
+  font-size: 20px;
+  }
+  .donation-title{
+    font-size: 28px;
+  }
+  .donation-subtitle{
+    font-size: 20px;
+  }
 } 
 
 
@@ -481,12 +492,14 @@ strong {
 
 @media (max-width: 526px) {
   .SocialImg {
-    width: 90px;
+    width: 70px;
   }
   .donation-img a {
     width: 55%;
   }
-  
+  .footer-info{
+    font-size: 13px;
+  }
 }
 @media (max-width: 400px) {
   .donation-img a {
