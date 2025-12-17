@@ -134,6 +134,28 @@ strong {
 }
 
 
+/* Верняя картинка */
+.upper_picture {
+  margin-top: 15px;
+  width: 100%;
+  height: 500px;
+  background-image: url("images/upper_picture.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15%;
+}
+/* расписание */
+.shedule{
+  width: 100%;
+  height: 500px;
+  background-image: url("images/shedule.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
 
 
 /* Главная */
@@ -146,7 +168,7 @@ strong {
 .main-info {
   max-width: 1150px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px 15px; /*15 px вверх низ */
   display: flex;
   align-items: center;
 
