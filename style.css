@@ -1,9 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* font-family: Cera Pro; */
   font-family: Arial, Helvetica, sans-serif;
-
   background-color: white;
 }
 img {
@@ -222,8 +220,6 @@ strong {
   max-width: 1150px;
   margin: 0 auto;
   padding: 25px 25px;
-}
-.map-info {
 }
 .map-title {
   font-weight: 600;
