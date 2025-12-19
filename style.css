@@ -183,7 +183,6 @@ strong {
 }
 .mainText2 {
   text-align: right;
-  margin-bottom: 15px;
 }
 .mainSuptitle {
   font-size: 20px;
@@ -321,7 +320,7 @@ strong {
     height: 400px;
   }
   .map-info {
-    padding: 50px 50px;
+    padding: 0 50px;
   }
   .donation .container {
     display: block;
@@ -346,9 +345,7 @@ strong {
     flex-direction: column;
     align-items: center;
   }
-  .main-bg {
-    padding-bottom: 10px;
-  }
+  
 
   .container_text {
     width: 100%;
@@ -359,7 +356,7 @@ strong {
   .mainText2 {
     width: 100%;
     text-align: left;
-    margin: 25px 0;
+    margin: 15px 0;
   }
 
   .mainTitle {
@@ -414,7 +411,7 @@ strong {
     width: 100%;
   }
   .faith-study .container {
-    padding: 50px 15px;
+    padding: 25px 15px;
   }
   .donation-title {
     width: 100%;
@@ -468,20 +465,14 @@ strong {
   #nav ul.header-list {
     margin-bottom: 500px;
   }
-}
-
-@media (max-width: 729px) {
-  .map-info {
-    padding: 50px 50px;
-  }
-}
+} 
 
 @media (max-width: 638px) {
   .container_text {
     padding: 0;
   } 
   .map-info {
-    padding: 50px 25px;
+    padding: 0 25px;
   }
 }
 
